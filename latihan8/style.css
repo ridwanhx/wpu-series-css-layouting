@@ -1,0 +1,66 @@
+div {
+	width: 200px;
+	height: 200px;
+}
+
+h1 {
+	margin-top: 80px;
+}
+
+.container {
+	width: 500px;
+	height: 800px;
+	border: 8px solid darkseagreen;
+	margin: auto;
+	/* property position relative pada container pembungkus ini adalah untuk menyamakan dimensi dengan elemen non-static childnya (.dua | absolute) */
+	position: relative;
+}
+
+.satu {
+	background-color: limegreen;
+}
+
+/* relative sifatnya bergantung pada posisi semula, jadi untuk urusan melakukan perubahan posisi pada elemen lebih disarankan memakai absolute */
+
+/* biasanya kita pakai relative untuk mengubah dimensi dari pembungkus sehingga nantinya elemen child yang mempunyai properti absolute / non static tidak akan bergerak keluar dari pembungkus */
+.dua {
+	background-color: violet;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+.tiga {
+	background-color: gold;
+}
+
+.empat {
+	background-color: darksalmon;
+	/* posisinya bersifat tetap, meskipun halaman kita scroll */
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	/* biasanya digunakan untuk membuat sebuah navbar/topbar/sidebar agar posisinya terkunci (tidak terpengaruh meskipun halaman kita scroll) */
+
+	width: 100%;
+	height: 60px;
+}
+
+/* example */
+.empat ul li {
+	display: inline-block;
+}
+
+
+.empat ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	margin-right: 8px;
+	padding: 6px;
+}
+
+.empat a:hover {
+	background-color: skyblue;
+}

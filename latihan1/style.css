@@ -1,0 +1,28 @@
+body { font-family: helvetica, arial, sans-serif; }
+
+.header {
+	background-color: lightblue;
+}
+
+.main img { width: 250px; /*display: none;*/}
+
+/*demonstrasi inline-block || mengubah inline menjadi block*/
+.navigasi a {
+	width: 200px;
+	height: 200px;
+	background-color: skyblue;
+	/* kalau  hanya menuliskan block, elemen yang kita buat hanya akan berperilaku menambahkan baris baru dan bisa diubah dimensinya */
+	
+	/* sebaliknya, jika hanya menuliskan inline. elemen yang kita buat tidak menambahkan baris baru melainkan berjajar ke samping dan ukuran dari seiap elemen tidak dapat kita ubah */
+
+	/* itulah kenapa kita menuliskan inline-block, agar elemen bisa berperilaku layaknya inline(menambahkan baris ke samping) dan di lain hal kita bisa merubah dimensi dan perilaku setiap elemennya dimanapun dan kapanpun */
+	display: inline-block;
+}
+/*  */
+.main {
+	background-color: salmon;
+	width: 600px;
+}
+
+/* elemen h3 defaultnya block */
+.main h3 { background-color: lightseagreen; }

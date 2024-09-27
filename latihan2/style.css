@@ -1,0 +1,29 @@
+body {
+	font-family: montserrat, arial, sans-serif;
+}
+/* implementasi sederhana display (width & height) */
+.satu { width: 150px; height: 150px; background-color: salmon; transition: 1s; }
+.satu:hover { width: 200px; height: 150px; }
+.dua { background-color: royalblue; width: 70%; }
+
+/* implementasi overflow */
+.auto {
+	width: 200px;
+	height: 200px;
+	overflow: auto;
+	background-color: lightseagreen;
+}
+
+.hidden {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	background-color: lightseagreen;
+}
+
+.scroll {
+	width: 200px;
+	height: 200px;
+	overflow: scroll;
+	background-color: lightseagreen;
+}

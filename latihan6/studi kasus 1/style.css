@@ -1,0 +1,55 @@
+/* studi kasus bagian pertama */
+
+/* karena sifatnya out-of flow, secara otomatis elemen dibawahnya akan langung berpindah posisi ke elemen yang sudah diberi property float (lihat kotak class dua) */
+/*div {
+	width: 100px;
+	height: 100px;
+	color: white;
+}*/
+
+.container {
+	width: 800px;
+	border :1px solid black;
+	margin: auto;
+}
+
+.satu, .dua, .tiga, .empat {
+	width: 100px;
+	height: 100px;
+	color: white;
+}
+
+.satu {
+	text-align: center;
+	line-height: 100px;
+	background-color: lime;
+}
+
+.dua {
+	text-align: center;
+	line-height: 100px;
+	background-color: violet;
+	/*float: left;
+	margin-left: 10px;*/
+}
+
+.dua:hover {
+	float: right;
+}
+
+/* secara otomatis elemen ini akan menimpa posisi dari elemen kotak class dua karena yang diterjemahkan oleh elemen ini adalah bahwasannya class dua tidak pernah ada / sudah keluar dari flow. */
+.tiga {
+	text-align: center;
+	line-height: 100px;
+	background-color: maroon;
+}
+
+.tiga:hover {
+	float: left;
+}
+
+.empat {
+	text-align: center;
+	line-height: 100px;
+	background-color: gold;
+}

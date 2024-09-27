@@ -1,0 +1,26 @@
+body {
+	font-family: arial;
+}
+
+.container {
+	width: 840px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.kotak {
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: salmon;
+	margin: 2px;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	line-height: 100px;
+}
+
+/* untuk mengehentikan float */
+.clear {
+	clear: left;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning | CSS Layouting</title>
+	<style>
+
+		body {
+			background-color: #eaeaea;
+			height: 1000px;
+			font-family: helvetica, montserrat, sans-serif;
+		}
+
+		.container {
+			width: 300px;
+			height: 300px;
+			border: 3px solid darkmagenta;
+			margin: auto;
+			position: relative;
+
+		}
+
+		.kotak1, .kotak2, .kotak3 {
+			width: 100px;
+			height: 100px;
+			color: white;
+			font-family: montserrat;
+			text-align: center;
+			line-height: 100px;
+			font-weight: bold;
+			margin: auto;
+		}
+/* positioning absolute */
+		.kotak1 {
+			background-color: lightseagreen;
+			position: absolute;
+			top: 0;	
+			left: 0;
+		}
+/* positioning absolute & z-index */
+		.kotak2 {
+			background-color: lightsalmon;
+			position: absolute;
+			top: 65px;
+			left: 65px;
+			z-index: 1;
+		}
+/* positioning absolute */
+		.kotak3 {
+			background-color: lightskyblue;
+			position: absolute;
+			top: 125px;
+			left: 125px;
+		}
+
+/* positioning fixed & z-index */
+		.top-bar {
+			background-color: dodgerblue;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+
+		.top-bar ul li {
+			display: inline-block;
+		}
+
+		.top-bar a {
+			font-family: montserrat;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size: 16px;
+			padding: 8px;
+		}
+
+		.top-bar a:hover {
+			background-color: lightseagreen;
+			border-radius: 15px;
+		}
+
+		h1 {
+			margin-top: 70px;
+		}
+/* positioning fixed */
+		.iklan {
+			background-color: rgba(0, 0, 0, 0.7);
+			position: fixed;
+			top: 100px;
+			left: 100px;
+			right: 100px;
+			bottom: 100px;
+			z-index: 99999;
+		}
+
+/* implementasi positioning absolute */
+		.close {
+			width: 45px;
+			height: 45px;
+			background-color: white;
+			font-weight: bold;
+			font-size: 24px;
+			text-align: center;
+			line-height: 45px;
+			border: 3px solid black;
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			border-radius: 50%;
+		}
+
+		.close a {
+			text-decoration: none;
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="top-bar">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Services</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</div>	
+	
+	<h1>mengimplementasikan positioning</h1>
+	
+	<div class="container">
+		<div class="kotak1">kotak 1</div>
+		<div class="kotak2">kotak 2</div>
+		<div class="kotak3">kotak 3</div>
+	</div>
+
+	<div class="iklan">
+		<div class="close"><a href="">X</a></div>
+	</div>
+
+</body>
+</html>

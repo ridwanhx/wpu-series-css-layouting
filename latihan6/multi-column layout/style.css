@@ -1,0 +1,61 @@
+body {
+	font-family: arial;
+}
+
+.container {
+	width: 800px;
+	border: 1px solid black;
+	padding: 5px;
+	
+}
+
+.satu {
+	width: 200px;
+	height: 300px;
+	background-color: skyblue;
+	float: left;
+}
+
+.dua {
+	width: 400px;
+	height: 300px;
+	background-color: salmon;
+	float: left;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.tiga {
+	width: 200px;
+	height: 300px;
+	background-color: lightseagreen;
+	float: right;
+}
+
+
+/* clear method both */
+/* cara ini dinilai kurang efektif karena adanya pemakaian <div> kosong bisa membuat code yang kita buat terkesan tidak rapih */
+/*.clear {
+	clear: both;
+}*/
+
+
+/* style clearfix (*recomended method) */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
